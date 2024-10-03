@@ -30,8 +30,8 @@
   "styles": [
     "style.css"
   ],  
-  "url": "https://gitlab.com/bartlomiejbielecki/pf2e-polskie-tlumaczenie",
-  "manifest": "https://gitlab.com/bartlomiejbielecki/pf2e-polskie-tlumaczenie/-/raw/main/module.json",
-  "download": "https://gitlab.com/bartlomiejbielecki/pf2e-polskie-tlumaczenie/-/archive/main/pf2e-polskie-tlumaczenie-main.zip",
-  "readme": "https://gitlab.com/bartlomiejbielecki/pf2e-polskie-tlumaczenie/-/raw/main/README.md"
+  "manifest": "https://raw.githubusercontent.com/Lioheart/pf2e-girassol/master/module.json",
+  "download": "https://github.com/Lioheart/pf2e-girassol/archive/refs/heads/main.zip",
+  "url": "https://github.com/Lioheart/pf2e-girassol",
+  "readme": "https://raw.githubusercontent.com/Lioheart/pf2e-girassol/refs/heads/main/README.md"
 }
