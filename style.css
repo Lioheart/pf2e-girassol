@@ -117,8 +117,6 @@ h4.entity-name a {
 /* Rozmiar tarczy poziomu */
 .actor.sheet section.window-content form.crb-style header.char-header .char-level .level {
     background-size: contain;
-    height: 50px;
-    width: 48px;
 }
 
 /* Rozmiar napisu Poziom w tarczy na karcie królestwa */
@@ -205,24 +203,4 @@ h4.entity-name a {
 /* Poprawa wyświetlania modyfikatorów Percepcji, Inicjatywy i Rzutów obronnych na karcie postaci */
 .hover {
     backdrop-filter: none !important;
-}
-
-/* Wyswietlanie angielskiej nazwy */
-.english-name span {
-    font: 600 var(--font-size-18) var(--serif-condensed);
-    margin-top: 7px;
-    padding-left: 5px;
-    user-select: all;
-}
-
-
-.english-name-other {
-    font: 600 var(--font-size-16) var(--sans-serif);    
-    user-select: all;
-}
-
-.english-name-vehicle {
-    font: 500 var(--font-size-12) var(--sans-serif);
-    user-select: all;
-    padding: 3px 2px;
 }
