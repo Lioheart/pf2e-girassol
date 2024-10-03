@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "Nodesto2";
+    src: url('./NodestoCapsCondensed2.otf');
+}
+
+@font-face {
+    font-family: "Girassol-Regular";
+    src: url('./Girassol-Regular.ttf');
+}
+
+:root {
+    --serif-condensed: "Girassol-Regular", "Modesto Condensed", serif;
+    --serif-condensed-old: "Modesto Condensed", serif;
+    --sans-serif: "Signika", Roboto, sans-serif;
+}
+
+#pause {
+    background: none;
+    animation: pulsate 5s infinite ease-in-out;
+  }
+  #pause img {
+    opacity: 0.5;
+  }
+  #pause figcaption {
+    color: var(--color-text-light-0);
+    /* font-size: var(--font-size-46); */
+    text-shadow: 2px 2px 2px var(--color-shadow-dark);
+    font-family: var(--serif-condensed);
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    padding: 0;
+    margin: 0;
+  }
+  @keyframes pulsate {
+    0% {
+      filter: drop-shadow(0 0 0 rgba(0, 42, 23, 0));
+    }
+    50% {
+      filter: drop-shadow(0 0 10px rgba(216, 195, 136, 0.5));
+    }
+    100% {
+      filter: drop-shadow(0 0 0 rgba(0, 42, 23, 0));
+    }
+  }
+  @media (prefers-reduced-motion) {
+    #pause {
+      animation: none;
+    }
+  }
+
+.nodesto,
+.pf2e.actor .abilities .ability .ability-id,
+.pf2e.actor .abilities .ability .ability-mod,
+.pf2e.actor .abilities .ability-title,
+.pf2e.actor .abilities .defense .defense-score>input,
+.pf2e.actor .abilities .defense .defense-score,
+.pf2e.actor .abilities .defense,
+.pf2e.actor .abilities .npc-defense .defense-score>input,
+.pf2e.actor .abilities .npc-defense .defense-score,
+.pf2e.actor .class-levels .class-header h3,
+.pf2e.actor .class-levels .class-list .item .item-header .class-levels,
+.pf2e.actor .details .character-detail>input,
+.pf2e.actor .item .skill-input>input,
+.pf2e.actor .npc-abilities .ability .ability-mod .ability-input,
+.pf2e.actor .npc-abilities .ability .ability-mod,
+.pf2e.actor .npc-abilities .ability-title,
+.pf2e.actor .npc-abilities .npc-defense .ability-name,
+.pf2e.actor .npc-defense .defense-score>input,
+.pf2e.actor .npc-defense .defense-score,
+.pf2e.actor .pf-heading,
+.pf2e.actor .primary-attributes .attribute .attribute-name,
+.pf2e.actor .primary-attributes .attribute .attribute-value,
+.pf2e.actor .sheet-header .charlevel .level,
+.pf2e.actor .sheet-header h1>input,
+.pf2e.actor .skills .skill-score,
+.pf2e.actor .spellbook .skill-score,
+.pf2e.actor .statuses .status h4,
+.pf2e.item form .sheet-sidebar .item-summary,
+.pf2e.sheet .sheet-header h1>input {
+    font-family: "Nodesto2", "Signika", "Palatino Linotype", serif !important;
+    font-size: 28px;
+}
+
+.npc .npc-sheet .top-sections .senses .perception label {
+    flex-basis: 6.5em;
+}
+
+div.compendium li.item h4 a {
+    font-size: 12px;
+}
+
+h4.entity-name a {
+    font-size: 12px;
+}
+
+.compendium-browser .spell-browser .spell-tags {
+    font-size: smaller;
+    font-weight: normal;
+}
+
+/* Wyświetlanie Zagrożenia na karcie spotkania */
+#combat .threat-award, #combat-popout .threat-award {
+    white-space: normal;
+}
+
+/* Wuświetlanie przycisków obrażeń na czacie */
+.message-content .damage-application {
+    word-break: normal;
+}
+
+/* Rozmiar napisu Poziom w tarczy na karcie postaci */
+.actor.sheet section.window-content form.crb-style header.char-header .char-level .level label, .actor.sheet section.window-content form.crb-style header.char-header .char-level .level input
+ {
+    margin-left: 0;
+    font-family: 'Roboto Condensed';
+}
+/* Rozmiar tarczy poziomu */
+.actor.sheet section.window-content form.crb-style header.char-header .char-level .level {
+    background-size: contain;
+    height: 50px;
+    width: 48px;
+}
+
+/* Rozmiar napisu Poziom w tarczy na karcie królestwa */
+.sheet.kingdom form > header section.level .level label, .sheet.kingdom form > header section.level {
+    /* font-size: var(--font-size-8); */
+    margin-left: 0;
+    font-family: 'Roboto Condensed';
+}
+/* Odległość elementów Cech od Aktywności Królestwa */
+.sheet.kingdom section.major > header {
+    line-height: inherit;
+}
+/* Zmiana nagłówków w karcie Punkty Atrybutów */
+.sheet.kingdom-builder .ability-builder h3 {
+    font-size: var(--font-size-18);
+    line-height: var(--font-size-18);
+}
+/* Przyciski ZWIĘKSZ oraz WADA w Karcie Punkty Atrybutów */
+.sheet.kingdom-builder .ability-builder .row-column button {
+    padding: 0.2em 0 0;
+    justify-content: space-evenly;
+}
+.sheet.kingdom-builder .ability-builder .row-column button i.fa-solid {
+    position: inherit;
+    left: 0.2em;
+}
+
+/* Pole liczby poziomu przedmiotu */
+.pf2e.item.sheet form > header .level input {
+    width: 50px;
+}
+
+/* Tekst Maks. PW Tarczy na karcie postaci */
+.actor.sheet.character .crb-style aside .sidebar .armor-class .shield-max-status .max label {
+    width: 5.3em;
+}
+
+/* Poprawa wyświetlania tytułu na karcie pułapek, poprawa detali */
+.sheet.hazard form > header input[type=text], .sheet.hazard form > header input[type=number]{
+    border-bottom: 0px;
+}
+.sheet.hazard .sidebar .health-line {
+    flex-direction: column;
+}
+.sheet.hazard .sidebar .valued-icon {
+    column-gap: 0.5em;
+}
+
+/* Poprawa karty pojazdów */
+.actor.sheet .crb-style header.char-header .char-level .level input, .actor.sheet section.window-content form.crb-style header.char-header .char-level .level input {
+    font-size: var(--font-size-20);
+}
+.actor.sheet.vehicle .crb-style aside .armor-class .ac .data-value input, .actor.sheet.vehicle .crb-style aside .armor-class .shield .data-value input{
+    font-size: var(--font-size-28);
+}
+.actor.sheet.vehicle .crb-style aside .armor-class .hardness{
+    background-size: contain;
+}
+.actor.sheet.vehicle .crb-style aside .armor-class .ac, .actor.sheet.vehicle .crb-style aside .armor-class .shield{
+    height: 5.425rem;
+}
+.actor.sheet.vehicle .crb-style aside {
+    background-size: 100% 100%, 100% 52px;
+}
+
+/* Zmiana rozmiaru tekstu typu Name */
+.pf2e.item.sheet form > header .details input, .pf2e.item.sheet form > header .details .level {
+    font: 700 var(--font-size-32) var(--serif-condensed);
+}
+.pf2e.item.sheet form > header input[type=text], .pf2e.item.sheet form > header input[type=number]{
+    height: var(--font-size);
+}
+
+/* Wyrównianie ikony w polu edycji elementów */
+.sheet header.sheet-header {
+    align-items: normal;
+}
+/* Poprawa wyświetlania wymagań w atutach */
+.pf2e.item.sheet.feat form .sidebar .prerequisites ul .tag {
+    padding: 0.25em 0.5em;
+    text-align: center;
+}
+
+/* Poprawa wyświetlania modyfikatorów Percepcji, Inicjatywy i Rzutów obronnych na karcie postaci */
+.hover {
+    backdrop-filter: none !important;
+}
+
+/* Wyswietlanie angielskiej nazwy */
+.english-name span {
+    font: 600 var(--font-size-18) var(--serif-condensed);
+    margin-top: 7px;
+    padding-left: 5px;
+    user-select: all;
+}
+
+
+.english-name-other {
+    font: 600 var(--font-size-16) var(--sans-serif);    
+    user-select: all;
+}
+
+.english-name-vehicle {
+    font: 500 var(--font-size-12) var(--sans-serif);
+    user-select: all;
+    padding: 3px 2px;
+}

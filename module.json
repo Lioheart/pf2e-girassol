@@ -1,0 +1,37 @@
+{
+  "id": "pf2e-girassol",
+  "title": "Pathfinder 2e - Polish Font",
+  "version": "0.1",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12.331"
+  },
+  "authors": [
+    {
+      "name": "Lioheart",
+      "discord": "lioheart77",
+      "flags": {}
+    }
+  ],
+  "description": "Polska czcionka do PF2e",
+
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "6.1.0",
+          "verified": "6.3.1"
+        }
+      }
+    ]
+  },
+  "styles": [
+    "style.css"
+  ],  
+  "url": "https://gitlab.com/bartlomiejbielecki/pf2e-polskie-tlumaczenie",
+  "manifest": "https://gitlab.com/bartlomiejbielecki/pf2e-polskie-tlumaczenie/-/raw/main/module.json",
+  "download": "https://gitlab.com/bartlomiejbielecki/pf2e-polskie-tlumaczenie/-/archive/main/pf2e-polskie-tlumaczenie-main.zip",
+  "readme": "https://gitlab.com/bartlomiejbielecki/pf2e-polskie-tlumaczenie/-/raw/main/README.md"
+}
